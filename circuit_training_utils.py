@@ -3,6 +3,7 @@ Utils for circuit training. Note that the full experiment code for the paper
 is in the paper_code directory, but it is much less clean. Circuit training
 code builds on the continuous_sparsification code from:
 https://github.com/mlepori1/NeuroSurgeon
+so NeuroSurgeon will need to be installed as well.
 
 """
 

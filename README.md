@@ -19,6 +19,8 @@ mask_dict = load_bigram_subnetwork_dict('EleutherAI/pythia-1b')
 model, tokenizer, config = load_subnetwork_model('EleutherAI/pythia-1b', mask_dict)
 ```
 
+Note on dependencies: for all the code in this README, only `circuit_loading_utils.py` is needed! The only notable dependencies for this file are Hugging Face transformers and huggingface_hub.
+
 ## Creating your own circuit.
 
 Note that `load_subnetwork_model` only requires a mask dict of parameters to keep.
