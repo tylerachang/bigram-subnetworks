@@ -6,6 +6,12 @@ We provide easy-to-use code to evaluate how other circuits change model behavior
 
 More generally, we provide simple code to run GPT-2 and Pythia models when specific subnetworks (e.g. specific attention heads or MLP dimensions) are dropped or included.
 
+<picture>
+<img src="layer_covariance.png" alt="Layer covariance similarities for Pythia 1B." width="90%" />
+</picture>
+
+We currently have bigram subnetworks trained for Pythia models up to 1B and GPT-2 models up to GPT-2 large. Pythia 1.4B and GPT-2 XL will be uploaded soon!
+
 ## Using bigram subnetworks.
 
 First, we provide code to test the behavior of the bigram subnetwork for a model, with or without another circuit added.
