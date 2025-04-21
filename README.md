@@ -2,7 +2,7 @@
 
 We release bigram subnetworks as described in [Chang and Bergen (2025)](https://tylerachang.github.io/).
 These are sparse subsets of model parameters that recreate bigram predictions (next token predictions conditioned only on the current token) in Transformer language models.
-We provide easy-to-use code to evaluate how other circuits change model behavior when added to these <i>minimal</i> and <i>interpretable</i> bigram subnetworks, thus evaluating circuit <i>sufficiency</i> for hypothesized target behaviors.
+We provide easy-to-use code to evaluate how other circuits change model behavior when added to these minimal and interpretable bigram subnetworks, thus evaluating circuit <i>sufficiency</i> for hypothesized target behaviors.
 
 More generally, we provide simple code to run GPT-2 and Pythia models when specific subnetworks (e.g. specific attention heads or MLP dimensions) are dropped or included.
 
