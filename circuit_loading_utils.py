@@ -112,6 +112,14 @@ def set_mlp_dimensions(mask_dict, layer, mlp_dimensions, to_keep=True, cache_dir
     return mask_dict  # Also modifies the original dictionary directly.
 
 
+# In a subnetwork dictionary, set a Transformer layer to be kept or dropped.
+def set_layer(mask_dict, layer, to_keep=True):
+    for k in list(mask_dict.keys()):
+        if f'.{layer}.' in k:
+            mask_dict[k][:, :] = to_keep
+    return mask_dict  # Also modifies the original dictionary directly.
+
+
 # Load a model given a subnetwork dictionary.
 # The model parameters are kept according to the subnetwork mask.
 def load_subnetwork_model(model_name, mask_dict, cache_dir='hf_cache'):
