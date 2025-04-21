@@ -37,7 +37,7 @@ Note that by default, token embeddings, token unembeddings, and layernorm parame
 from circuit_loading_utils import (load_bigram_subnetwork_dict,
     load_empty_subnetwork_dict, load_full_subnetwork_dict,
     load_subnetwork_model, set_attention_head, set_mlp_dimensions,
-	set_layer)
+    set_layer)
 
 # Load the bigram subnetwork dict as above:
 mask_dict = load_bigram_subnetwork_dict('EleutherAI/pythia-1b')
