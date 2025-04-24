@@ -1,6 +1,6 @@
 # Bigram Subnetworks: Mapping to Next Tokens in Transformer Language Models
 
-We release bigram subnetworks as described in [Chang and Bergen (2025)](https://tylerachang.github.io/).
+We release bigram subnetworks as described in [Chang and Bergen (2025)](https://arxiv.org/abs/2504.15471).
 These are sparse subsets of model parameters that recreate bigram predictions (next token predictions conditioned only on the current token) in Transformer language models.
 We provide easy-to-use code to evaluate how other circuits change model behavior when added to these minimal and interpretable bigram subnetworks, thus evaluating circuit <i>sufficiency</i> for hypothesized target behaviors.
 
@@ -98,5 +98,6 @@ print(generator(input_text, max_new_tokens=25)[0]['generated_text'])
   author={Chang, Tyler A. and Bergen, Benjamin K.},
   journal={Preprint},
   year={2024},
+  url={https://arxiv.org/abs/2504.15471},
 }
 </pre>
